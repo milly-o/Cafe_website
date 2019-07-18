@@ -1,0 +1,321 @@
+@charset "UTF-8";
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "游ゴシック Medium",YuGothic,YuGothicM,"Hiragino Kaku Gothic ProN","Hiragino Kaku Gothic Pro",メイリオ,Meiryo,sans-serif;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+p {
+  line-height: 1.5;
+  font-size: 1.4rem;
+}
+
+@media (min-width: 768px) {
+  p {
+    font-size: 1.6rem;
+  }
+}
+
+h1, h2, h3 {
+  line-height: 1.6;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+p, h1, h2, h3, h4 {
+  color: #333333;
+}
+
+/*--------------------------------------
+
+SPメニュー
+
+--------------------------------------*/
+/*ハンバーガーメニュー*/
+header {
+  position: relative;
+}
+
+#mobile-gmenu {
+  height: 45px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background: #242424;
+}
+
+@media (min-width: 768px) {
+  #mobile-gmenu {
+    display: none;
+  }
+}
+
+.mobile-menu-block-menu {
+  height: 45px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 45px;
+  z-index: 99;
+  background: #FC9207;
+}
+
+.mobile-menu-block-access {
+  height: 45px;
+  position: absolute;
+  right: 45px;
+  top: 0;
+  width: 45px;
+  z-index: 99;
+  background: #9F8B6D;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
+.mobile-menu-block-access img {
+  height: 16px;
+}
+
+.mobile-menu-block-access span {
+  font-size: 0.9rem;
+  color: #fff;
+  padding-top: 4px;
+}
+
+a.mobile-gmenu-menu {
+  height: 20px;
+  width: 30px;
+  position: absolute;
+  top: 12px;
+  right: 7px;
+}
+
+.menu__line {
+  background: #fff;
+  display: block;
+  height: 2px;
+  position: absolute;
+  transition: transform .3s;
+  width: 100%;
+}
+
+.menu__line--center {
+  top: 9px;
+}
+
+.menu__line--bottom {
+  bottom: 0;
+}
+
+.menu__line--top.active {
+  top: 8px;
+  transform: rotate(45deg);
+}
+
+.menu__line--center.active {
+  transform: scaleX(0);
+}
+
+.menu__line--bottom.active {
+  bottom: 10px;
+  transform: rotate(135deg);
+}
+
+/*ヘッダーロゴ*/
+.header-logo-sp {
+  position: absolute;
+  top: 15px;
+  left: 10px;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.header-logo-sp img {
+  width: 130px;
+}
+
+.header-logo-sp span {
+  color: #fff;
+  font-size: 1.2rem;
+  display: inline-block;
+  margin-left: 5px;
+  letter-spacing: 1px;
+}
+
+/*グローバルメニュー*/
+.gnav {
+  background: rgba(0, 0, 0, 0.8);
+  display: none;
+  height: 100%;
+  position: fixed;
+  width: 100%;
+  z-index: 98;
+}
+
+.gnav__wrap {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+}
+
+.gnav__menu__item {
+  margin: 40px 0;
+}
+
+.gnav__menu__item a {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 40px;
+  text-decoration: none;
+  transition: .5s;
+}
+
+.gnav__menu__item a:hover {
+  color: #666;
+}
+
+/*--------------------------------------
+
+PC・タブレットメニュー
+
+--------------------------------------*/
+#pc-gmenu {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  #pc-gmenu {
+    display: block;
+  }
+}
+
+#pc-gmenu {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  #pc-gmenu {
+    display: block;
+  }
+}
+
+.pc-gmenu-container-fluid {
+  background: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  transition: 0.3s;
+}
+
+.pc-gmenu-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  padding: 20px 0;
+  transition: 0.3s;
+}
+
+@media (min-width: 992px) {
+  .pc-gmenu-container {
+    justify-content: space-between;
+  }
+}
+
+.pc-gmenu-container .header-logo-pc {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+}
+
+.pc-gmenu-container .header-logo-pc img {
+  width: 200px;
+  backface-visibility: hidden;
+}
+
+.pc-gmenu-container .header-logo-pc span {
+  font-size: 1.5rem;
+  display: inline-block;
+  margin-left: 15px;
+  color: #fff;
+}
+
+.is-animation .pc-gmenu-container {
+  padding: 12px 0;
+}
+
+.is-animation.pc-gmenu-container-fluid {
+  background: black;
+}
+
+.gnav-pc {
+  margin-top: 20px;
+}
+
+@media (min-width: 992px) {
+  .gnav-pc {
+    margin-top: 0;
+  }
+}
+
+.gnav-pc ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.gnav-pc ul li {
+  margin-left: 30px;
+}
+
+.gnav-pc ul li::first-child {
+  margin-left: 0;
+}
+
+.gnav-pc ul li a {
+  color: #fff;
+  font-size: 1.5rem;
+  position: relative;
+  display: inline-block;
+  transition: 0.3s;
+  padding-bottom: 5px;
+}
+
+.gnav-pc ul li a::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  content: '';
+  width: 0;
+  border-bottom: solid 2px #fff;
+  transition: 0.3s;
+}
+
+.gnav-pc ul li a:hover {
+  color: #fff;
+}
+
+.gnav-pc ul li a:hover::after {
+  width: 30px;
+}
