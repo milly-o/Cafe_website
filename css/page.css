@@ -429,6 +429,12 @@
   margin-top: -60px;
 }
 
+@media (min-width: 992px) {
+  .bread-pr-container .bread-main-image-sp {
+    width: 700px;
+  }
+}
+
 .bread-pr-container h2 {
   margin-bottom: 20px;
 }
@@ -440,7 +446,7 @@
 .bread-pr-container h2 span {
   display: block;
   font-weight: bold;
-  margin-top: -10px;
+  margin-top: 8px;
 }
 
 .bread-pr-container h3 {

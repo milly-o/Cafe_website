@@ -328,6 +328,9 @@
 		margin-right: -40px;
 		margin-left: 30px;
 		margin-top: -60px;
+		@include lg {
+			width: 700px;	
+		}
 	}
 	h2{
 		margin-bottom: 20px;
@@ -337,7 +340,7 @@
 		span{
 			display: block;
 			font-weight: bold;
-			margin-top: -10px;
+			margin-top: 8px;
 		}
 	}
 	h3{
@@ -350,6 +353,8 @@
 		margin-right: -15px;
 	}
 }
+
+
 
 
 
