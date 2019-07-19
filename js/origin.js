@@ -26,7 +26,7 @@ jQuery(function() {
 });
 //ページ内リンク スムーススクロール
 jQuery(function($) {
-    $('a[href^="#"]').click(function() {
+    $('a[href^="#"]' + 'a:not([href^="#modal"])').click(function(){
         var speed = 400;
         var href = $(this).attr("href");
         var target = $(href == "#" || href == "" ? 'html' : href);
