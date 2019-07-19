@@ -11,14 +11,58 @@
     <link rel="stylesheet" type="text/css" href="css/reset.css" />
     <link rel="stylesheet" type="text/css" href="css/module.css" />
     <link rel="stylesheet" type="text/css" href="css/page.css" />
+    <link rel="stylesheet" type="text/css" href="css/slick.css" />
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css" />
     <!-- js -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://code.jquery.com/jquery-migrate-3.0.0.min.js"></script>
-    <script src="js/origin.js"></script>
-    <script src="js/ofi.min.js"></script>
-    <script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-3.0.0.min.js"></script>
+    <script type="text/javascript" src="js/origin.js"></script>
+    <script type="text/javascript" src="js/ofi.min.js"></script>
+    <script type="text/javascript">
     jQuery(function() {
         objectFitImages();
+    });
+    </script>
+    <script src="js/slick.min.js"></script>
+    <script type="text/javascript">
+    jQuery(document).ready(function() {
+        $('.cro-slider-list').slick({
+            dots: true,
+            slidesToShow: 5,
+            slidesToScroll: 1,
+            autoplay: false,
+            autoplaySpeed: 3000,
+            prevArrow: '<img src="images/slider_arrow_left.jpg" class="slide-arrow prev-arrow">',
+            nextArrow: '<img src="images/slider_arrow_right.jpg" class="slide-arrow next-arrow">',
+            responsive: [{
+                    breakpoint: 992,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 1,
+                        infinite: true,
+                        dots: true
+                    }
+                },
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2,
+                        infinite: true,
+                        dots: true
+                    }
+                },
+                {
+                    breakpoint: 544,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        infinite: true,
+                        dots: true
+                    }
+                }
+            ]
+        });
     });
     </script>
 </head>
@@ -268,6 +312,69 @@
                         <p class="pr-text d-lg-none">ピアーズカフェといえば、毎日店内で焼きあげる焼きたてのパン！お得なドリンクセットもご用意しております。</p>
                     </div>
                 </div>
+            </div>
+            <div class="container-fluid pan-container-fluid">
+                <h2><img src="images/title_lineup.png" alt="ラインナップ"></h2>
+                <section class="section-cro">
+                    <div class="container cro-read-container">
+                        <div class="row">
+                            <h3>店舗限定！こだわりのクロワッサン</h3>
+                            <p>外はサクサク、中はふわふわ。素材からこだわったクロワッサンは一度食べたらやみつきの当店の名物メニュー。<br class="d-none d-lg-block">あなたのベストクロワッサンを探してみてください。</p>
+                        </div>
+                    </div>
+                    <div class="cro-slider-area">
+                        <ul class="cro-slider-list">
+                            <li>
+                                <img src="images/pan_01.jpg" alt="">
+                                <h4>美味しいクロワッサン</h4>
+                                <p class="fee">¥580</p>
+                                <p class="text">クロワッサンの説明が入ります。クロワッサンの説明が入ります。クロワッサンの説明が入ります。</p>
+                            </li>
+                            <li>
+                                <img src="images/pan_02.jpg" alt="">
+                                <h4>美味しいクロワッサン</h4>
+                                <p class="fee">¥580</p>
+                                <p class="text">クロワッサンの説明が入ります。クロワッサンの説明が入ります。クロワッサンの説明が入ります。</p>
+                            </li>
+                            <li>
+                                <img src="images/pan_03.jpg" alt="">
+                                <h4>美味しいクロワッサン</h4>
+                                <p class="fee">¥580</p>
+                                <p class="text">クロワッサンの説明が入ります。クロワッサンの説明が入ります。クロワッサンの説明が入ります。</p>
+                            </li>
+                            <li>
+                                <img src="images/pan_04.jpg" alt="">
+                                <h4>美味しいクロワッサン</h4>
+                                <p class="fee">¥580</p>
+                                <p class="text">クロワッサンの説明が入ります。クロワッサンの説明が入ります。クロワッサンの説明が入ります。</p>
+                            </li>
+                            <li>
+                                <img src="images/pan_01.jpg" alt="">
+                                <h4>美味しいクロワッサン</h4>
+                                <p class="fee">¥580</p>
+                                <p class="text">クロワッサンの説明が入ります。クロワッサンの説明が入ります。クロワッサンの説明が入ります。</p>
+                            </li>
+                            <li>
+                                <img src="images/pan_02.jpg" alt="">
+                                <h4>美味しいクロワッサン</h4>
+                                <p class="fee">¥580</p>
+                                <p class="text">クロワッサンの説明が入ります。クロワッサンの説明が入ります。クロワッサンの説明が入ります。</p>
+                            </li>
+                            <li>
+                                <img src="images/pan_03.jpg" alt="">
+                                <h4>美味しいクロワッサン</h4>
+                                <p class="fee">¥580</p>
+                                <p class="text">クロワッサンの説明が入ります。クロワッサンの説明が入ります。クロワッサンの説明が入ります。</p>
+                            </li>
+                            <li>
+                                <img src="images/pan_04.jpg" alt="">
+                                <h4>美味しいクロワッサン</h4>
+                                <p class="fee">¥580</p>
+                                <p class="text">クロワッサンの説明が入ります。クロワッサンの説明が入ります。クロワッサンの説明が入ります。</p>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
             </div>
         </div>
     </div>
