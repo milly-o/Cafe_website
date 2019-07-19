@@ -115,6 +115,7 @@
 	background: #F3F1E3;
 	padding-top: 25px;
 	padding-bottom: 25px;
+	margin-bottom: 50px;
 }
 .top-information-container{
 	h1{
@@ -191,9 +192,11 @@
 	}
 }
 #news-container-fluid{
-	margin-top: 30px;
+	margin-top: -45px;
+	padding-top: 45px;
 	@include pc {
-		margin-top: 80px;
+		margin-top: -92px;
+		padding-top: 92px;
 	}
 }
 .news-container{
@@ -364,6 +367,8 @@
 }
 
 #bread-container-fluid{
+	margin-top: -45px;
+	padding-top: 45px;
 }
 .bread-pr-container-fluid{
 	background: url('../images/bread_main_bg_sp_02.jpg') no-repeat;
@@ -385,7 +390,7 @@
 	}
 	.bread-main-image{
 		margin-left: 40px;
-		margin-top: -75px;
+		margin-top: -60px;
 		@include lg {
 			width: 60%;
 			margin-top: -80px;
@@ -506,6 +511,7 @@
 				-ms-transform: translate(0, -50%);
 				transform: translate(0, -50%);
 				width: 30px;
+			    cursor: pointer;
 				@include pc {
 					width: 40px;
 				}
@@ -525,9 +531,3 @@
 		}
 	}
 }
-
-
-
-
-
-
