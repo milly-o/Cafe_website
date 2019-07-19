@@ -244,10 +244,16 @@
 
 #about-container-fluid{
 	background: $orange;
-	background-image: -webkit-gradient(linear, 0 0, 100% 100%, color-stop(0.25, #e9890a), color-stop(0.25, transparent), color-stop(0.5, transparent), color-stop(0.5, #e9890a), color-stop(0.75, #e9890a), color-stop(0.75, transparent), to(transparent));
+	background-image: -webkit-gradient(linear, 0 0, 100% 100%, color-stop(0.25, #e9890a),color-stop(0.25, transparent), color-stop(0.5, transparent), color-stop(0.5, #e9890a), color-stop(0.75, #e9890a), color-stop(0.75, transparent), to(transparent));
 	position: relative;
 	z-index: -1;
-	padding-bottom: 100px;
+	padding-bottom: 65px;
+	@include pc {
+		padding-bottom: 100px;
+	}
+	@include lg {
+		padding-bottom: 150px;
+	}
 		h3{
 		color: #fff;
 		font-size: 2.0rem;
@@ -364,20 +370,49 @@
 	background: url('../images/bread_main_bg_sp_02.jpg') no-repeat;
 	background-size: cover;
 	padding-bottom: 50px;
+	@include lg {
+		background: url('../images/bread_main_bg_pc.jpg') no-repeat;
+		background-size: cover;
+	}
 }
 .bread-pr-container{
-	.bread-main-image-sp{
-		margin-right: -40px;
-		margin-left: 30px;
-		margin-top: -60px;
+	.bread-pr-read-area{
 		@include lg {
-			width: 700px;	
+			display: flex;
+			flex-wrap: nowrap;
+			align-items: center;
+			justify-content: space-between;
+		}
+	}
+	.bread-main-image{
+		margin-left: 40px;
+		margin-top: -75px;
+		@include lg {
+			width: 60%;
+			margin-top: -80px;
+			order: 2;
+		}
+	}
+	.bread-pr-read{
+		margin-top: 10px;
+		@include lg{
+			margin-top: 0;
+			order: 1;
+			width: 35%;
+		}
+		.pr-text{
+			@include lg {
+				font-size: 18px;
+			}
 		}
 	}
 	h2{
 		margin-bottom: 20px;
 		img{
 			width: 220px;
+			@include lg {
+				width: 380px;
+			}
 		}
 		span{
 			display: block;
@@ -388,11 +423,24 @@
 	h3{
 		font-size: 18px;
 		font-weight: bold;
+		@include lg {
+			font-size: 25px;
+			margin: 30px 0;
+		}
 	}
-	.pr-image{
+	.pr-image-sp{
 		margin-top: 30px;
 		margin-bottom: 30px;
 		margin-right: -15px;
+	}
+	.pr-image-pc{
+		max-width: 653px;
+		@include lg {
+			margin-top: 30px;
+		}
+		@include xl {
+			margin-top: -30px;
+		}
 	}
 }
 

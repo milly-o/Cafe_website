@@ -333,7 +333,19 @@
   background-image: -webkit-gradient(linear, 0 0, 100% 100%, color-stop(0.25, #e9890a), color-stop(0.25, transparent), color-stop(0.5, transparent), color-stop(0.5, #e9890a), color-stop(0.75, #e9890a), color-stop(0.75, transparent), to(transparent));
   position: relative;
   z-index: -1;
-  padding-bottom: 100px;
+  padding-bottom: 65px;
+}
+
+@media (min-width: 768px) {
+  #about-container-fluid {
+    padding-bottom: 100px;
+  }
+}
+
+@media (min-width: 992px) {
+  #about-container-fluid {
+    padding-bottom: 150px;
+  }
 }
 
 #about-container-fluid h3 {
@@ -481,15 +493,50 @@
   padding-bottom: 50px;
 }
 
-.bread-pr-container .bread-main-image-sp {
-  margin-right: -40px;
-  margin-left: 30px;
-  margin-top: -60px;
+@media (min-width: 992px) {
+  .bread-pr-container-fluid {
+    background: url("../images/bread_main_bg_pc.jpg") no-repeat;
+    background-size: cover;
+  }
 }
 
 @media (min-width: 992px) {
-  .bread-pr-container .bread-main-image-sp {
-    width: 700px;
+  .bread-pr-container .bread-pr-read-area {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.bread-pr-container .bread-main-image {
+  margin-left: 40px;
+  margin-top: -75px;
+}
+
+@media (min-width: 992px) {
+  .bread-pr-container .bread-main-image {
+    width: 60%;
+    margin-top: -80px;
+    order: 2;
+  }
+}
+
+.bread-pr-container .bread-pr-read {
+  margin-top: 10px;
+}
+
+@media (min-width: 992px) {
+  .bread-pr-container .bread-pr-read {
+    margin-top: 0;
+    order: 1;
+    width: 35%;
+  }
+}
+
+@media (min-width: 992px) {
+  .bread-pr-container .bread-pr-read .pr-text {
+    font-size: 18px;
   }
 }
 
@@ -499,6 +546,12 @@
 
 .bread-pr-container h2 img {
   width: 220px;
+}
+
+@media (min-width: 992px) {
+  .bread-pr-container h2 img {
+    width: 380px;
+  }
 }
 
 .bread-pr-container h2 span {
@@ -512,8 +565,31 @@
   font-weight: bold;
 }
 
-.bread-pr-container .pr-image {
+@media (min-width: 992px) {
+  .bread-pr-container h3 {
+    font-size: 25px;
+    margin: 30px 0;
+  }
+}
+
+.bread-pr-container .pr-image-sp {
   margin-top: 30px;
   margin-bottom: 30px;
   margin-right: -15px;
+}
+
+.bread-pr-container .pr-image-pc {
+  max-width: 653px;
+}
+
+@media (min-width: 992px) {
+  .bread-pr-container .pr-image-pc {
+    margin-top: 30px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .bread-pr-container .pr-image-pc {
+    margin-top: -30px;
+  }
 }
