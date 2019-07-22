@@ -532,32 +532,6 @@
 	}
 }
 
-.menu-container-fluid{
-	.menu-tab-nav{
-		margin: 0;
-		padding: 0;
-		li{
-			display: inline;
-			a{
-			    display: inline-block;
-			    background: #405dca;
-			    color: #fff;
-			    padding: 10px;
-			    border-radius: 5px 5px 0 0;
-			    text-decoration: none;
-			    &:hover, .active{
-			    	background: #ddd;
-			    	color: #333;
-			    }
-			}
-		}
-	}
-	.menu-tab-content{
-		padding: 20px;
-		border: 1px dotted #ccc;
-	}
-}
-
 
 
 
