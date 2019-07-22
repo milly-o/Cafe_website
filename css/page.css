@@ -713,3 +713,31 @@
     bottom: -60px;
   }
 }
+
+.menu-container-fluid .menu-tab-nav {
+  margin: 0;
+  padding: 0;
+}
+
+.menu-container-fluid .menu-tab-nav li {
+  display: inline;
+}
+
+.menu-container-fluid .menu-tab-nav li a {
+  display: inline-block;
+  background: #405dca;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px 5px 0 0;
+  text-decoration: none;
+}
+
+.menu-container-fluid .menu-tab-nav li a:hover, .menu-container-fluid .menu-tab-nav li a .active {
+  background: #ddd;
+  color: #333;
+}
+
+.menu-container-fluid .menu-tab-content {
+  padding: 20px;
+  border: 1px dotted #ccc;
+}
