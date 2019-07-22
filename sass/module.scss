@@ -39,8 +39,6 @@ p,h1,h2,h3,h4{
 SPメニュー
 
 --------------------------------------*/
-
-/*ハンバーガーメニュー*/
 header{
     position: relative;
 }
@@ -106,18 +104,27 @@ a.mobile-gmenu-menu{
 .menu__line--bottom{
     bottom: 0;
 }
-.menu__line--top.active{
-    top: 8px;
-    transform: rotate(45deg);
+.mobile-menu{
+    text-align: center;
+    ul{
+        li{
+            margin-bottom: 35px;
+            a{
+                color: #fff;
+                font-size: 2.0rem;
+                font-weight: bold;
+            }
+        }
+    }
 }
-.menu__line--center.active{
-    transform:scaleX(0);
+/*modaal 変更*/
+.modaal-close{
+    right: 0;
+    top: 0; 
 }
-.menu__line--bottom.active{
-    bottom: 10px;
-    transform: rotate(135deg);
+.modaal-container{
+    background: none;
 }
-
 /*ヘッダーロゴ*/
 .header-logo-sp{
 	position: absolute;
@@ -137,40 +144,6 @@ a.mobile-gmenu-menu{
     	letter-spacing: 1px;
     }
 }
-
-/*グローバルメニュー*/
-.gnav{
-    background: rgba(0,0,0,0.8);
-    display: none;
-    height: 100%;
-    position: fixed;
-    width: 100%;
-    z-index: 98;
-}
-.gnav__wrap{
-    align-items:center;
-    display: flex;
-    height: 100%;
-    justify-content: center;
-    position: absolute;
-    width: 100%;
-}
-.gnav__menu__item{
-    margin: 40px 0;
-}
-.gnav__menu__item a{
-    color: #fff;
-    font-size: 2rem;
-    font-weight: bold;
-    padding: 40px;
-    text-decoration: none;
-    transition: .5s;
-}
-.gnav__menu__item a:hover{
-    color: #666;
-}
-
-
 
 /*--------------------------------------
 
