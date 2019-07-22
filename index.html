@@ -82,11 +82,20 @@
                     <span class="menu__line menu__line--center"></span>
                     <span class="menu__line menu__line--bottom"></span>
                 </a>
-                <div id="modal" style="display:none;">
-                    <p>これはサンプルです。</p>
+                <div id="modal" data-modaal-id="modal" style="display:none;">
+                    <p>これはサンプルです。<a href="#about-container-fluid" class="exit-modaal">リンクです。</a></p>
                 </div>
                 <script type="text/javascript">
-                $(".modal-sp-menu").modaal();
+                    $(".modal-sp-menu").modaal();
+                </script>
+                <script>
+                    jQuery( function() {
+                        var inst = $('#modal').modaal();
+                        $('a[href^="#"]').click(function () {
+                        inst.close();
+                        return true;
+                        });
+                    } );                    
                 </script>
             </div>
             <a href="#" class="mobile-menu-block mobile-menu-block-access">

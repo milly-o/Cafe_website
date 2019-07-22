@@ -10,6 +10,20 @@
 //     });
 // });
 //PCメニュー
+
+jQuery( function() {
+    var inst = $( '[data-remodal-id=modal]' ).modaal();
+    $( document ).on( 'click', '.open-remodal', function() {
+        inst.open();
+        return false;
+    } );
+    $( document ).on( 'click', '.exit-remodal', function() {
+        inst.close();
+    } );
+} );
+
+
+
 jQuery(function() {
     var $win = $(window),
         $header = $('.pc-gmenu-container-fluid'),
