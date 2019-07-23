@@ -1,4 +1,4 @@
-$sp: 544px; // スマホ
+$sp: 576px; // スマホ
 $pc: 768px; // PC
 $lg: 992px; // でかPC
 $xl: 1200px; // でかPC
@@ -25,6 +25,13 @@ $xl: 1200px; // でかPC
   }
 }
 
+@mixin font-mincho{
+  font-family: yu-mincho-pr6, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 $black: #333333;
 $orange: #FC9207;
 $cream: #F3F1E3;
+$gold: #B99F79;

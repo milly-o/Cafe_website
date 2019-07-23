@@ -94,12 +94,12 @@
                     </nav>
                 </div>
                 <script type="text/javascript">
-                    $(".modal-sp-menu").modaal({
-                        overlay_opacity: "0.9"
-                    });
-                    $('.mobile-menu a').click(function() {
-                        $('.modal-sp-menu').modaal('close')
-                    })
+                $(".modal-sp-menu").modaal({
+                    overlay_opacity: "0.9"
+                });
+                $('.mobile-menu a').click(function() {
+                    $('.modal-sp-menu').modaal('close')
+                })
                 </script>
             </div>
             <a href="#" class="mobile-menu-block mobile-menu-block-access">
@@ -395,9 +395,74 @@
                 </section>
             </div>
         </div>
-    </div><!--/#bread-container-fluid-->
-
-
-
+    </div>
+    <!--/#bread-container-fluid-->
+    <div id="food-menu-container-fluid" class="container-fluid menu-container-fluid">
+        <div class="row d-block">
+            <h2><span class="hoge">フードメニュー</span><img src="images/title_menu_food.png" alt="foodmenu"></h2>
+            <div class="menu-tab-nav-area">
+                <ul class="menu-tab-nav">
+                    <li><a href="#menu-food-01">Morning <span class="under-arrow"></span></a></li>
+                    <li><a href="#menu-food-02">Lunch <span class="under-arrow"></span></a></li>
+                    <li><a href="#menu-food-03">Regular <span class="under-arrow"></span></a></li>
+                </ul>
+            </div>
+            <div class="menu-tab-content">
+                <div id="menu-food-01">
+                    <div class="top-image">
+                        <img src="images/menu_bg_morning.jpg" alt="ピアーズカフェ モーニング">
+                    </div>
+                    <div class="container menu-container food-menu-container">
+                        <span class="time">7:00 - 11:00</span>
+                        <h3 class="menu-title">MORNING MENU</h3>
+                        <section class="set">
+                            <div class="set-text">
+                                <h3 class="set-name">モーニングブレッドセット<br class="d-none d-md-block"><span class="fee">¥<span class="number">380</span>(税別)</span></h3>
+                                <p>サラダ + <br class="d-none d-md-block">お好きなパン1つ + <br class="d-none d-md-block">ドリンク</p>
+                            </div>
+                            <div class="set-image">
+                                <img src="images/set_morning.png" alt="モーニングブレッドセット">
+                            </div>
+                            <div class="menu-line d-md-none">
+                                <img src="images/menu_line.png" alt="">
+                            </div>
+                            <div class="menu-line d-none d-md-block">
+                                <img src="images/menu_line_long.png" alt="">
+                            </div>                            
+                        </section>
+                        <section class="set">
+                            <div class="set-text">
+                                <h3 class="set-name">モーニングラザニアセット<br class="d-none d-md-block"><span class="fee">¥<span class="number">500</span>(税別)</span></h3>
+                                <p>ラザニア + <br class="d-none d-md-block">バゲット + <br class="d-none d-md-block">サラダ + <br class="d-none d-md-block">ドリンク</p>
+                            </div>
+                            <div class="set-image">
+                                <img src="images/set_razania.png" alt="モーニングラザニアセット">
+                                <div class="choice">
+                                    <div class="choice-title">
+                                        <img src="images/title_choice.png" alt="choice">
+                                    </div>
+                                    <p>カンパーニュorレーズンパンから選べます</p>
+                                    <div class="choice-pan">
+                                        <img src="images/morning_02_pan.png" alt="選べるバゲット">
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+                <div id="menu-food-02">
+                    <div class="top-image">
+                        <img src="images/menu_bg_morning.jpg" alt="ピアーズカフェ モーニング">
+                    </div>
+                    <div class="container menu-container food-menu-container">
+                        <span class="time">7:00 - 11:00</span>
+                        <h3>MORNING MENU</h3>
+                    </div>
+                </div>
+                <div id="menu-food-03">タブ3の内容<br>タブ3の内容<br>タブ3の内容</div>
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>

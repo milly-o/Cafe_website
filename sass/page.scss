@@ -200,8 +200,6 @@
 	}
 }
 .news-container{
-	position: relative;
-	z-index: -1;
 	h3{
 		border-top: 1px solid;
 		border-bottom: 1px solid;
@@ -219,7 +217,7 @@
 			height: 30px;
 			width: auto;
 			@include pc {
-				height: 35px;
+				height: 45px;
 			}
 		}
 		span{
@@ -532,9 +530,266 @@
 	}
 }
 
+.menu-container-fluid{
+	padding-top: 30px;
+	padding-bottom: 30px;
+	@include pc {
+		padding-top: 60px;
+		padding-bottom: 70px;
+	}
+	h2{
+		margin:0 auto 30px;
+		color: #fff;
+		text-align: center;
+		@include pc {
+			margin: 0 auto 50px;
+		}
+		span{
+			font-size: 1.4rem;
+			display: block;
+			margin-bottom: 5px;
+		}
+		img{
+			height: 40px;
+			width: auto;
+			@include pc {
+				height: 50px;
+			}
+		}
+	}
+}
+#food-menu-container-fluid{
+	 background: #B99F79;
+}
+.menu-tab-nav-area{
+	width: 100%;
+	background: #242424;
+}
+.menu-tab-nav{
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: center;
+	@include lg {
+		width: 80%;
+		margin: 0 auto;
+	}
+	li{
+		width: 33.333333%;
+		text-align: center;
+		border-right: 1px solid #fff;
+		&:last-child{
+			border-right: none;
+		}
+		a{
+		    background: #242424;
+		    color: #fff;
+		    padding: 15px 10px;
+		    display: block;
+		    font-size: 1.8rem;
+		    transition: 0.3s;
+		    @include font-mincho;
+		    @include pc {
+		    	padding: 20px 10px;
+		    	font-size: 2.2rem;
+		    }
+		    &:hover, &.active{
+		    	background: #D47A1A;
+		    	color: #fff;
+		    }
+		    &:hover{
+		    	cursor: pointer;
+		    	transition: 0.3s;
+		    }
+			span{
+				position: relative;
+				display: block;
+				color: #000;
+				vertical-align: middle;
+				text-decoration: none;
+				font-size: 1.5rem;
+				margin-top: 8px;
+				padding-bottom: 10px;
+				&::before, &::after{
+					position: absolute;
+					top: 0;
+					bottom: 0;
+					left: 0;
+					right: 0;
+					margin: auto;
+					content: "";
+					vertical-align: middle;
+				}
+				&::before{
+					width: 10px;
+					height: 10px;
+					border-right: 1px solid #fff;
+					border-bottom: 1px solid #fff;
+					-webkit-transform: rotate(45deg);
+					transform: rotate(45deg);
+				}
+			}
+		}
+	}
+}
 
+.menu-tab-content{
+	.top-image{
+		img{
+			height: 240px;
+    		object-fit: cover;
+    		font-family: 'object-fit: cover;';
+    		@include lg {
+    			height: 400px;
+    		}
+		}
+	}
+}
 
-
+.menu-container{
+	background: #fff;
+	margin-top: -50px;
+	position: relative;
+	width: 90%;
+	padding-top: 20px;
+	padding-bottom: 30px;
+	@include pc {
+		padding-top: 40px;
+		padding-left: 50px;
+		padding-right: 50px;
+	}
+	@include lg {
+		padding-left: 100px;
+		padding-right: 100px;
+		margin-top: -150px;
+	}
+	.time{
+		font-size: 2.2rem;
+		color: $gold;
+		display: block;
+		text-align: center;
+		letter-spacing: 1px;
+		@include font-mincho;
+		@include lg {
+			font-size: 3.0rem;
+		}
+	}
+	.menu-title{
+		border-top: double;
+		border-bottom: solid 1px;
+		padding: 6px 0;
+		text-align: center;
+		margin-top: 15px;
+		margin-bottom: 20px;
+		font-size: 2.4rem;
+		letter-spacing: 1px;
+		color: $gold;
+		@include font-mincho;
+		@include pc {
+			padding: 15px 0;
+			margin-top: 30px;
+			margin-bottom: 40px;
+		}
+		@include lg {
+			font-size: 3.5rem;
+		}
+	}
+	.set{
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: column;
+		@include pc {
+			flex-direction: row;
+			justify-content: center;
+		}
+		.set-text{
+			@include pc {
+				width: 40%;
+			}
+			@include xl {
+				width: 30%;
+			}
+			p{
+				@include pc {
+					font-size: 1.8rem;
+				}
+			}
+		}
+		.set-name{
+			font-size: 1.6rem;
+			font-weight: bold;
+			@include pc {
+				font-size: 1.8rem;
+				margin-bottom: 10px;
+			}
+			@include lg {
+				font-size: 2.2rem;
+			}
+			span.fee{
+				font-size: 1.3rem;
+				margin-left: 10px;
+				@include pc {
+					font-size: 1.5rem;
+					margin-left: 0;
+				}
+			}
+			span.number{
+				font-size: 2.5rem;
+				font-weight: bold;
+				@include pc {
+					font-size: 3.5rem;
+				}
+			}
+		}
+		ul{
+			margin-top: 10px;
+			li{
+				font-size: 1.5rem;
+				margin-bottom: 8px;
+			}
+		}
+		.set-image{
+			margin-top: 10px;
+			img{
+				width: 100%;
+			}
+			@include pc {
+				width: 58%;
+			}
+			@include xl {
+				width: 48%;
+			}
+		}
+		.choice{
+			margin: 0 auto;
+			text-align: center;
+			.choice-title{
+				img{
+					height: 25px;
+					width: auto;
+				}
+			}
+			.choice-pan{
+				width: 80%;
+				margin: 0 auto;
+				@include pc {
+					width: 100%;
+				}
+			}
+			p{
+				margin: 10px 0 5px;
+				@include pc {
+					font-size: 1.4rem;
+				}
+			}
+		}
+		.menu-line{
+			margin: 20px 0;
+			@include pc {
+				margin: 35px 0;
+			}
+		}
+	}
+}
 
 
 

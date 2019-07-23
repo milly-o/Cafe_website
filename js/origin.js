@@ -28,3 +28,27 @@ $(function(){
 });
 
 
+//タブメニュー
+jQuery(function($){
+    $('.menu-tab-content > div').hide();
+ 
+    $('.menu-tab-nav a').click(function () {
+        $('.menu-tab-content > div').hide().filter(this.hash).fadeIn();
+ 
+        $('.menu-tab-nav a').removeClass('active');
+        $(this).addClass('active');
+ 
+        return false;
+    }).filter(':eq(0)').click();
+});
+
+
+//明朝体フォント adobe fonts
+(function(d) {
+var config = {
+  kitId: 'pwl1xes',
+  scriptTimeout: 3000,
+  async: true
+},
+h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+})(document);
