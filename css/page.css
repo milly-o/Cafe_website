@@ -767,6 +767,10 @@
   background: #B99F79;
 }
 
+#drink-menu-container-fluid {
+  background: #9F8B6D;
+}
+
 .menu-tab-nav-area {
   width: 100%;
   background: #242424;
@@ -875,43 +879,6 @@
   padding-top: 20px;
   padding-bottom: 30px;
   box-shadow: 0 0 8px #a2a2a2;
-}
-
-.menu-container::before {
-  content: "";
-  top: 0;
-  left: 0;
-  border-bottom: 80px solid transparent;
-  border-left: 80px solid #242424;
-  position: absolute;
-  z-index: 10;
-}
-
-@media (min-width: 992px) {
-  .menu-container::before {
-    border-bottom: 130px solid transparent;
-    border-left: 130px solid #242424;
-  }
-}
-
-.menu-container::after {
-  content: "いつでも";
-  display: block;
-  top: 20px;
-  transform: rotate(-45deg);
-  color: #fff;
-  left: 0px;
-  position: absolute;
-  z-index: 20;
-  font-weight: bold;
-}
-
-@media (min-width: 992px) {
-  .menu-container::after {
-    top: 35px;
-    left: 10px;
-    font-size: 2.0rem;
-  }
 }
 
 @media (min-width: 768px) {
@@ -1124,9 +1091,51 @@
   }
 }
 
+.anytime-menu-container::before {
+  content: "";
+  top: 0;
+  left: 0;
+  border-bottom: 80px solid transparent;
+  border-left: 80px solid #242424;
+  position: absolute;
+  z-index: 10;
+}
+
+@media (min-width: 992px) {
+  .anytime-menu-container::before {
+    border-bottom: 130px solid transparent;
+    border-left: 130px solid #242424;
+  }
+}
+
+.anytime-menu-container::after {
+  content: "いつでも";
+  display: block;
+  top: 20px;
+  transform: rotate(-45deg);
+  color: #fff;
+  left: 0px;
+  position: absolute;
+  z-index: 20;
+  font-weight: bold;
+}
+
+@media (min-width: 992px) {
+  .anytime-menu-container::after {
+    top: 35px;
+    left: 10px;
+    font-size: 2.0rem;
+  }
+}
+
 .morning-menu-container::before {
+  content: "";
+  top: 0;
+  left: 0;
   border-bottom: 80px solid transparent;
   border-left: 80px solid #fc5959;
+  position: absolute;
+  z-index: 10;
 }
 
 @media (min-width: 992px) {
@@ -1138,20 +1147,32 @@
 
 .morning-menu-container::after {
   content: "朝だけ";
+  display: block;
   top: 20px;
+  transform: rotate(-45deg);
+  color: #fff;
   left: 3px;
+  position: absolute;
+  z-index: 20;
+  font-weight: bold;
 }
 
 @media (min-width: 992px) {
   .morning-menu-container::after {
     top: 35px;
     left: 20px;
+    font-size: 2.0rem;
   }
 }
 
 .lunch-menu-container::before {
+  content: "";
+  top: 0;
+  left: 0;
   border-bottom: 80px solid transparent;
   border-left: 80px solid #ff9525;
+  position: absolute;
+  z-index: 10;
 }
 
 @media (min-width: 992px) {
@@ -1163,14 +1184,21 @@
 
 .lunch-menu-container::after {
   content: "昼だけ";
+  display: block;
   top: 20px;
+  transform: rotate(-45deg);
+  color: #fff;
   left: 3px;
+  position: absolute;
+  z-index: 20;
+  font-weight: bold;
 }
 
 @media (min-width: 992px) {
   .lunch-menu-container::after {
     top: 35px;
     left: 20px;
+    font-size: 2.0rem;
   }
 }
 
@@ -1303,10 +1331,6 @@
 
 .menu-container .set .item-list-no-image .line {
   flex: auto;
-}
-
-.menu-container .set .item-list-no-image .fee::before {
-  content: '￥';
 }
 
 .menu-container .set .item-list-no-image .fee::after {

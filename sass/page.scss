@@ -567,6 +567,9 @@
 #food-menu-container-fluid{
 	 background: #B99F79;
 }
+#drink-menu-container-fluid{
+	 background: #9F8B6D;
+}
 .menu-tab-nav-area{
 	width: 100%;
 	background: #242424;
@@ -659,35 +662,6 @@
 	padding-top: 20px;
 	padding-bottom: 30px;
     box-shadow: 0 0 8px #a2a2a2;
-	&::before{
-	    content: "";
-	    top: 0;
-	    left: 0;
-	    border-bottom: 80px solid transparent;
-	    border-left: 80px solid #242424;
-	    position: absolute;
-	    z-index: 10;
-	    @include lg {
-		    border-bottom: 130px solid transparent;
-		    border-left: 130px solid #242424;
-	    }
-	}
-	&::after{
-	    content: "いつでも";
-	    display: block;
-	    top: 20px;
-	    transform: rotate(-45deg);
-	    color: #fff;
-	    left: 0px;
-	    position: absolute;
-	    z-index: 20;
-	    font-weight: bold;
-	    @include lg {
-	    	top: 35px;
-	    	left: 10px;
-	    	font-size: 2.0rem;
-	    }
-	}
 	@include pc {
 		padding-top: 40px;
 		padding-left: 50px;
@@ -830,42 +804,98 @@
 	}
 }
 
+.anytime-menu-container{
+	&::before{
+	    content: "";
+	    top: 0;
+	    left: 0;
+	    border-bottom: 80px solid transparent;
+	    border-left: 80px solid #242424;
+	    position: absolute;
+	    z-index: 10;
+	    @include lg {
+		    border-bottom: 130px solid transparent;
+		    border-left: 130px solid #242424;
+	    }
+	}
+	&::after{
+	    content: "いつでも";
+	    display: block;
+	    top: 20px;
+	    transform: rotate(-45deg);
+	    color: #fff;
+	    left: 0px;
+	    position: absolute;
+	    z-index: 20;
+	    font-weight: bold;
+	    @include lg {
+	    	top: 35px;
+	    	left: 10px;
+	    	font-size: 2.0rem;
+	    }
+	}
+}
+
 .morning-menu-container{
 	&::before{
+	    content: "";
+	    top: 0;
+	    left: 0;
 	    border-bottom: 80px solid transparent;
 	    border-left: 80px solid #fc5959;
+	    position: absolute;
+	    z-index: 10;
 	    @include lg {
 		    border-bottom: 130px solid transparent;
 		    border-left: 130px solid #fc5959;
 	    }
-	}	
+	}
 	&::after{
 	    content: "朝だけ";
-    	top: 20px;
-    	left: 3px;	    
+	    display: block;
+	    top: 20px;
+	    transform: rotate(-45deg);
+	    color: #fff;
+	    left: 3px;
+	    position: absolute;
+	    z-index: 20;
+	    font-weight: bold;
 	    @include lg {
 	    	top: 35px;
 	    	left: 20px;
+	    	font-size: 2.0rem;
 	    }
 	}
 }
 
 .lunch-menu-container{
 	&::before{
+	    content: "";
+	    top: 0;
+	    left: 0;
 	    border-bottom: 80px solid transparent;
 	    border-left: 80px solid #ff9525;
+	    position: absolute;
+	    z-index: 10;
 	    @include lg {
 		    border-bottom: 130px solid transparent;
 		    border-left: 130px solid #ff9525;
 	    }
-	}	
+	}
 	&::after{
 	    content: "昼だけ";
-    	top: 20px;
-    	left: 3px;	    
+	    display: block;
+	    top: 20px;
+	    transform: rotate(-45deg);
+	    color: #fff;
+	    left: 3px;
+	    position: absolute;
+	    z-index: 20;
+	    font-weight: bold;
 	    @include lg {
 	    	top: 35px;
 	    	left: 20px;
+	    	font-size: 2.0rem;
 	    }
 	}
 }
@@ -964,9 +994,6 @@
 		flex: auto;
 	}
 	.fee{
-		&::before{
-			content: '￥';
-		}
 		&::after{
 			content: '(税別)';
 			font-size: 1.0rem;

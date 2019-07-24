@@ -30,17 +30,45 @@ $(function(){
 
 //タブメニュー
 jQuery(function($){
-    $('.menu-tab-content > div').hide();
+    $('.food-menu-tab-content > div').hide();
  
-    $('.menu-tab-nav a').click(function () {
-        $('.menu-tab-content > div').hide().filter(this.hash).fadeIn();
+    $('.food-menu-tab-nav a').click(function () {
+        $('.food-menu-tab-content > div').hide().filter(this.hash).fadeIn();
  
-        $('.menu-tab-nav a').removeClass('active');
+        $('.food-menu-tab-nav a').removeClass('active');
         $(this).addClass('active');
  
         return false;
     }).filter(':eq(0)').click();
 });
+
+jQuery(function($){
+    $('.drink-menu-tab-content > div').hide();
+ 
+    $('.drink-menu-tab-nav a').click(function () {
+        $('.drink-menu-tab-content > div').hide().filter(this.hash).fadeIn();
+ 
+        $('.drink-menu-tab-nav a').removeClass('active');
+        $(this).addClass('active');
+ 
+        return false;
+    }).filter(':eq(0)').click();
+});
+
+
+// jQuery(function($){
+//     $('.menu-tab-content > div').hide();
+ 
+//     $('.menu-tab-nav a').click(function () {
+//         $('.menu-tab-content > div').hide().filter(this.hash).fadeIn();
+ 
+//         $('.menu-tab-nav a').removeClass('active');
+//         $(this).addClass('active');
+ 
+//         return false;
+//     }).filter(':eq(0)').click();
+// });
+
 
 
 //明朝体フォント adobe fonts
