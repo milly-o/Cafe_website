@@ -491,14 +491,34 @@
 					color: $dark-orange;
 					@include pc {
 						font-size: 1.8rem;
-						margin-bottom: 10px;
+						margin-bottom: 5px;
+					}
+					&::after{
+						content: '(税別)';
+						font-size: 1.0rem;
+						margin-left: 5px;
+						@include pc {
+							font-size: 1.3rem;
+						}
+					}			
+				}
+				.set-fee{
+					font-size: 1.6rem;
+					@include pc {
+						font-size: 1.8rem;
+					}
+					&::after{
+						content: '(税別)';
+						font-size: 1.0rem;
+						margin-left: 5px;
+						color: $dark-orange;
+						@include pc {
+							font-size: 1.3rem;
+						}
 					}
 				}
 				.text{
-					font-size: 1.3rem;
-					@include pc {
-						font-size: 1.5rem;
-					}
+					margin: 0 10px;
 				}
 			}
 			img.slide-arrow{
@@ -516,9 +536,15 @@
 			}
 			img.prev-arrow{
 				left: -15px;
+				@include lg {
+					left: -45px;
+				}
 			}
 			img.next-arrow{
 				right: -15px;
+				@include lg {
+					right: -45px;
+				}
 			}
 			.slick-dots{
 				bottom: -40px;
@@ -530,6 +556,13 @@
 	}
 }
 
+.section-pan{
+	margin-top: 80px;
+	@include pc {
+		margin-top: 150px;
+	}
+}
+
 .menu-container-fluid{
 	padding-top: 30px;
 	padding-bottom: 30px;
@@ -537,12 +570,19 @@
 		padding-top: 60px;
 		padding-bottom: 70px;
 	}
+	@include lg {
+		padding-top: 80px;
+		padding-bottom: 100px;
+	}
 	h2{
 		margin:0 auto 30px;
 		color: #fff;
 		text-align: center;
 		@include pc {
 			margin: 0 auto 50px;
+		}
+		@include lg {
+			margin: 0 auto 80px;
 		}
 		span{
 			font-size: 1.4rem;
@@ -566,9 +606,13 @@
 }
 #food-menu-container-fluid{
 	 background: #B99F79;
+	 margin-top: 80px;
 }
 #drink-menu-container-fluid{
 	 background: #9F8B6D;
+}
+#sweets-menu-container-fluid{
+	 background: #D5A28F;
 }
 .menu-tab-nav-area{
 	width: 100%;
@@ -720,7 +764,6 @@
 			}
 			p{
 				font-weight: bold;
-				color: $dark-orange;
 				@include pc {
 					font-size: 1.8rem;
 				}
@@ -739,6 +782,7 @@
 			span.fee{
 				font-size: 1.3rem;
 				margin-left: 10px;
+				color: $dark-orange;
 				@include pc {
 					font-size: 1.5rem;
 					margin-left: 0;

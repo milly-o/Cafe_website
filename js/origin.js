@@ -56,20 +56,6 @@ jQuery(function($){
 });
 
 
-// jQuery(function($){
-//     $('.menu-tab-content > div').hide();
- 
-//     $('.menu-tab-nav a').click(function () {
-//         $('.menu-tab-content > div').hide().filter(this.hash).fadeIn();
- 
-//         $('.menu-tab-nav a').removeClass('active');
-//         $(this).addClass('active');
- 
-//         return false;
-//     }).filter(':eq(0)').click();
-// });
-
-
 
 //明朝体フォント adobe fonts
 (function(d) {
