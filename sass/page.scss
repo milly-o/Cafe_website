@@ -456,7 +456,7 @@
 		}
 	}
 	section h3{
-		color: #D47A1A;
+		color: $dark-orange;
 		font-size: 1.8rem;
 		margin-bottom: 10px;
 		font-weight: bold;
@@ -488,7 +488,7 @@
 				.fee{
 					font-size: 1.6rem;
 					font-weight: bold;
-					color: #D47A1A;
+					color: $dark-orange;
 					@include pc {
 						font-size: 1.8rem;
 						margin-bottom: 10px;
@@ -548,12 +548,18 @@
 			font-size: 1.4rem;
 			display: block;
 			margin-bottom: 5px;
+			@include pc {
+				font-size: 1.8rem;	
+			}
 		}
 		img{
 			height: 40px;
 			width: auto;
 			@include pc {
 				height: 50px;
+			}
+			@include lg {
+				height: 80px;
 			}
 		}
 	}
@@ -593,7 +599,7 @@
 		    	font-size: 2.2rem;
 		    }
 		    &:hover, &.active{
-		    	background: #D47A1A;
+		    	background: $dark-orange;
 		    	color: #fff;
 		    }
 		    &:hover{
@@ -635,11 +641,11 @@
 .menu-tab-content{
 	.top-image{
 		img{
-			height: 240px;
+			height: 200px;
     		object-fit: cover;
     		font-family: 'object-fit: cover;';
     		@include lg {
-    			height: 400px;
+    			height: 600px;
     		}
 		}
 	}
@@ -652,6 +658,36 @@
 	width: 90%;
 	padding-top: 20px;
 	padding-bottom: 30px;
+    box-shadow: 0 0 8px #a2a2a2;
+	&::before{
+	    content: "";
+	    top: 0;
+	    left: 0;
+	    border-bottom: 80px solid transparent;
+	    border-left: 80px solid #242424;
+	    position: absolute;
+	    z-index: 10;
+	    @include lg {
+		    border-bottom: 130px solid transparent;
+		    border-left: 130px solid #242424;
+	    }
+	}
+	&::after{
+	    content: "いつでも";
+	    display: block;
+	    top: 20px;
+	    transform: rotate(-45deg);
+	    color: #fff;
+	    left: 0px;
+	    position: absolute;
+	    z-index: 20;
+	    font-weight: bold;
+	    @include lg {
+	    	top: 35px;
+	    	left: 10px;
+	    	font-size: 2.0rem;
+	    }
+	}
 	@include pc {
 		padding-top: 40px;
 		padding-left: 50px;
@@ -660,7 +696,8 @@
 	@include lg {
 		padding-left: 100px;
 		padding-right: 100px;
-		margin-top: -150px;
+		margin-top: -350px;
+		padding-bottom: 80px;
 	}
 	.time{
 		font-size: 2.2rem;
@@ -699,7 +736,6 @@
 		flex-direction: column;
 		@include pc {
 			flex-direction: row;
-			justify-content: center;
 		}
 		.set-text{
 			@include pc {
@@ -709,6 +745,8 @@
 				width: 30%;
 			}
 			p{
+				font-weight: bold;
+				color: $dark-orange;
 				@include pc {
 					font-size: 1.8rem;
 				}
@@ -748,7 +786,8 @@
 			}
 		}
 		.set-image{
-			margin-top: 10px;
+			width: 90%;
+			margin: 10px auto 0;
 			img{
 				width: 100%;
 			}
@@ -791,6 +830,150 @@
 	}
 }
 
+.morning-menu-container{
+	&::before{
+	    border-bottom: 80px solid transparent;
+	    border-left: 80px solid #fc5959;
+	    @include lg {
+		    border-bottom: 130px solid transparent;
+		    border-left: 130px solid #fc5959;
+	    }
+	}	
+	&::after{
+	    content: "朝だけ";
+    	top: 20px;
+    	left: 3px;	    
+	    @include lg {
+	    	top: 35px;
+	    	left: 20px;
+	    }
+	}
+}
 
+.lunch-menu-container{
+	&::before{
+	    border-bottom: 80px solid transparent;
+	    border-left: 80px solid #ff9525;
+	    @include lg {
+		    border-bottom: 130px solid transparent;
+		    border-left: 130px solid #ff9525;
+	    }
+	}	
+	&::after{
+	    content: "昼だけ";
+    	top: 20px;
+    	left: 3px;	    
+	    @include lg {
+	    	top: 35px;
+	    	left: 20px;
+	    }
+	}
+}
 
+.menu-container-middle{
+	margin-top: 20px;
+}
 
+.item-list-wrapper{
+	@include lg {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+}
+
+.item-list-box{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+    align-content: flex-start;
+	margin-bottom: 20px;
+	@include lg {
+		width: 48%;
+		margin-bottom: 35px;
+	}
+	.item-image{
+		width: 40%;
+		@include lg {
+			width: 100%;
+		}
+	}
+	.item-text{
+		width: 55%;
+		@include lg {
+			width: 100%;
+			margin-top: 20px;
+		}
+		h4{
+			font-size: 1.4rem;
+			font-weight: bold;
+			@include pc {
+				font-size: 2.0rem;
+				margin-bottom: 10px;
+			}
+		}
+		.fee{
+			font-size: 1.4rem;
+			color: $dark-orange;
+			font-weight: bold;
+			@include pc {
+				font-size: 2.0rem;
+			}
+		}
+		.set-fee{
+			font-size: 1.4rem;
+			@include pc {
+				font-size: 2.0rem;
+			}
+		}
+		span{
+			font-size: 1.0rem;
+			@include pc {
+				font-size: 1.3rem;
+			}
+		}
+	}
+}
+
+.menu-container .set .item-list-no-image{
+	width: 100%;
+	@include lg {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+	li{
+		display: flex;
+		flex-flow: row wrap;
+		width: 100%;
+		margin-bottom: 18px;
+		font-size: 1.4rem;
+		@include lg {
+			width: 48%;
+			font-size: 1.8rem;
+		}
+	}
+	.item-line{
+		position: relative;
+		top: calc(50% - 1px);
+		margin: 0 10px;
+		border: none;
+		border-top: dotted 2px #CCC;
+	}
+	.line{
+		flex: auto;
+	}
+	.fee{
+		&::before{
+			content: '￥';
+		}
+		&::after{
+			content: '(税別)';
+			font-size: 1.0rem;
+			margin-left: 5px;
+			@include pc {
+				font-size: 1.3rem;
+			}
+		}
+	}
+}
