@@ -237,14 +237,6 @@
 		}
 	}
 }
-#news-container-fluid{
-	margin-top: -45px;
-	padding-top: 45px;
-	@include pc {
-		margin-top: -92px;
-		padding-top: 92px;
-	}
-}
 .news-container{
 	h3{
 		border-top: 1px solid;
@@ -596,6 +588,14 @@
 				bottom: -40px;
 				@include pc {
 					bottom: -60px;
+				}
+			}
+		}
+		.slick-dots{
+			li{
+				margin: 0;
+				@include pc {
+					margin: 0 5px;
 				}
 			}
 		}
