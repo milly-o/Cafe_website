@@ -1,11 +1,44 @@
 @import"_parameter.scss";
 
-#hero-container-fluid{
+#hero-wrapper{
 	position: relative;
 	margin-top: 45px;
-	z-index: -100;
+	// z-index: -100;
 	@include pc {
 		margin-top: 0;
+	}
+	.hero-slider{
+		background: #000;
+	}
+	.hero-slider-list{
+		opacity: 0;
+		transition: 2s;
+		.slick-slide{
+			img{
+				height: 360px;
+				object-fit: cover;
+				font-family: 'object-fit: cover;';
+				@include sp {
+					height: 500px;
+				}
+				@include pc {
+					height: 600px;
+				}
+				@include lg {
+					height: auto;
+				}
+			}
+		}
+		@include lg {
+			.slick-slide:not(.slick-center){
+				opacity: 0.75;
+				transition: 0.2s linear;
+			}			
+		}
+
+	}
+	.slick-initialized{
+    	opacity: 1
 	}
 	.hero-image-logo{
 		position: absolute;
@@ -24,9 +57,8 @@
 		}
 	}
 }
-.hero-image-sp,.hero-image-pc{
-	width: 100%;
-}
+
+
 #hero-under-container-fluid{
 	background-color: #1E1E1E;
 	background-image: -webkit-gradient(linear, 0 0, 100% 100%,color-stop(.25, #242424), color-stop(.25, transparent),color-stop(.5, transparent), color-stop(.5, #242424),color-stop(.75, #242424), color-stop(.75, transparent),to(transparent));
@@ -34,7 +66,6 @@
 	background-size: 18px 18px;
 	padding-top: 15px;
 	padding-bottom: 15px;
-    z-index: -1;
     position: relative;
 	@include pc {
 		padding-top: 40px;
@@ -73,13 +104,20 @@
 				margin-bottom: 5px;
 				font-weight: bold;
 				font-size: 1.5rem;
+				letter-spacing: 2px;
 				@include pc {
 					font-size: 2.2rem;
+				}
+				@include lg {
+					font-size: 2.8rem;
 				}
 			img{
 				width: 15px;
 				@include pc {
 					width: 20px;
+				}
+				@include lg {
+					width: 30px;
 				}
 			}
 			span{
@@ -91,6 +129,9 @@
 				font-size: 1.5rem;
 				@include pc {
 					font-size: 2.0rem;
+				}
+				@include lg {
+					font-size: 2.5rem;
 				}
 			}			
 		}
@@ -108,6 +149,11 @@
     }
     @include lg {
     	right: 150px;
+    }
+    @include xxl {
+    	width: 280px;
+    	top: -210px;
+    	right: 300px;
     }
 }
 
@@ -606,7 +652,6 @@
 }
 #food-menu-container-fluid{
 	 background: #B99F79;
-	 margin-top: 80px;
 }
 #drink-menu-container-fluid{
 	 background: #9F8B6D;

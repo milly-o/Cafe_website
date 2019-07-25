@@ -1,3 +1,32 @@
+//メインスライダー
+jQuery(document).ready(function() {
+    $('.hero-slider-list').slick({
+    autoplay: true,
+    autoplaySpeed: 4500,
+    speed: 1200,
+    dots: false,
+    arrows: false,
+    centerMode: true,
+    centerPadding: '6%',
+    focusOnSelect:true,
+    pauseOnHover: false,
+    pauseOnFocus: false,
+        responsive: [{
+                breakpoint: 992,
+                settings: {
+                	centerMode: false,
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: false
+                }
+            }
+        ]    
+    });   
+});
+
+
+
 //クロワッサン スライダー
 jQuery(document).ready(function() {
     $('.cro-slider-list').slick({

@@ -211,11 +211,11 @@ PC・タブレットメニュー
   justify-content: center;
   align-items: center;
   align-content: center;
-  padding: 20px 0;
+  padding: 25px 0;
   transition: 0.3s;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
   .pc-gmenu-container {
     justify-content: space-between;
   }
@@ -241,7 +241,7 @@ PC・タブレットメニュー
 }
 
 .is-animation .pc-gmenu-container {
-  padding: 12px 0;
+  padding: 20px 0;
 }
 
 .is-animation.pc-gmenu-container-fluid {
@@ -252,7 +252,7 @@ PC・タブレットメニュー
   margin-top: 20px;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
   .gnav-pc {
     margin-top: 0;
   }

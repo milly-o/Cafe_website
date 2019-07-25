@@ -185,9 +185,9 @@ PC・タブレットメニュー
   justify-content: center;
   align-items: center;
   align-content: center;
-  padding: 20px 0;
+  padding: 25px 0;
   transition: 0.3s;
-  @include lg {
+  @include xl {
     justify-content: space-between;
   }
   .header-logo-pc{
@@ -208,14 +208,14 @@ PC・タブレットメニュー
   }
 }
 .is-animation .pc-gmenu-container{
-    padding: 12px 0;
+    padding: 20px 0;
 }
 .is-animation.pc-gmenu-container-fluid{
     background: rgba(0, 0, 0, 1);
 }
 .gnav-pc{
     margin-top: 20px;
-    @include lg {
+    @include xl {
         margin-top: 0;
     }
     ul{

@@ -2,6 +2,7 @@ $sp: 576px; // スマホ
 $pc: 768px; // PC
 $lg: 992px; // でかPC
 $xl: 1200px; // でかPC
+$xxl: 1400px; // でかでかPC
 
 @mixin sp {
   @media (min-width: ($sp)) {
@@ -21,6 +22,12 @@ $xl: 1200px; // でかPC
 
 @mixin xl {
   @media (min-width: ($xl)) {
+    @content;
+  }
+}
+
+@mixin xxl {
+  @media (min-width: ($xxl)) {
     @content;
   }
 }
