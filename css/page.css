@@ -1476,67 +1476,89 @@
   }
 }
 
-.access-wrapper {
-  background-image: url(../images/hero-image_sp.jpg);
-  background-size: cover;
-  padding: 50px 0;
-}
-
-.access-wrapper .access-logo {
+#access-container-fluid .logo {
   margin: 0 auto;
   width: 40%;
   margin-bottom: 30px;
 }
 
-.access-wrapper .access-logo p {
+#access-container-fluid .logo p {
   font-size: 2.5rem;
   color: #fff;
   text-align: center;
+  font-weight: bold;
+  letter-spacing: 5px;
 }
 
-.access-wrapper .access-sub p {
-  font-size: 2rem;
-  color: #fff;
-  text-align: center;
-}
-
-.access-wrapper .access-sub {
+#access-container-fluid .sub {
   margin-bottom: 30px;
 }
 
-.access-container {
-  width: 90%;
-  background-color: #fff;
+#access-container-fluid .sub p {
+  font-size: 1.8rem;
+  color: #fff;
   text-align: center;
-  padding: 20px 10px 30px 10px;
-  margin: 0 15px;
+  font-weight: bold;
 }
 
-.access-container .access-textlogo {
-  width: 60%;
-  margin: 20px auto;
+.access-top-area {
+  background: url("../images/footer_bg_sp.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-right: -15px;
+  margin-left: -15px;
+  height: 450px;
+  padding: 40px 0;
+}
+
+.access-container {
+  background-color: #fff;
+  padding: 30px 15px;
+  margin: -120px auto 0;
+}
+
+.access-container h2 {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.access-container h2 img {
+  height: 40px;
+  width: auto;
 }
 
 .access-container iframe {
-  width: 90%;
+  width: 100%;
   border: 1px #333 solid;
   margin: 20px auto;
 }
 
 .access-container .access-box {
   display: flex;
-  text-align: left;
-  margin: 0 auto;
-  width: 90%;
 }
 
-.access-container .access-box .box-title {
-  margin-right: 15px;
+.access-container .access-box h4 {
+  margin-right: 1.4rem;
   font-weight: bold;
+  width: 10%;
+  min-width: 40px;
+}
+
+.access-container .access-box-facility ul li {
+  color: #FC9207;
+  font-weight: bold;
+}
+
+.access-container .access-box-facility ul li img {
+  width: 20px;
+  height: auto;
+}
+
+.access-container .access-box-facility ul li span {
+  margin-left: 5px;
 }
 
 .access-container hr {
   border-top: 1px solid #333;
-  width: 90%;
   margin: 1em auto;
 }

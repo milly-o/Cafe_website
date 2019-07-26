@@ -15,7 +15,7 @@ img{
 	height: auto;
 }
 
-p{
+p,li{
     line-height: 1.5;
     font-size: 1.4rem;
     @include pc {
@@ -51,6 +51,8 @@ p,h1,h2,h3,h4{
 .orange{
     color: $dark-orange;
 }
+
+
 
 /*--------------------------------------
 

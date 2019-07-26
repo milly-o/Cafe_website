@@ -13,13 +13,13 @@ img {
   height: auto;
 }
 
-p {
+p, li {
   line-height: 1.5;
   font-size: 1.4rem;
 }
 
 @media (min-width: 768px) {
-  p {
+  p, li {
     font-size: 1.8rem;
   }
 }
