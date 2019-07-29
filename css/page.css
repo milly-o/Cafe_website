@@ -1560,6 +1560,7 @@
 
 #access-container-fluid {
   background-color: #f7f6f2;
+  padding-bottom: 80px;
 }
 
 #access-container-fluid .logo {
@@ -1706,4 +1707,43 @@
 .access-container hr {
   border-top: 1px solid #333;
   margin: 1em auto;
+}
+
+#footer-container-fluid {
+  background-color: #333;
+  color: #fff;
+  position: absolute;
+  padding-top: 180px;
+  padding-bottom: 30px;
+}
+
+footer .footer-logo {
+  position: absolute;
+  width: 50%;
+  left: 25%;
+  top: -40px;
+}
+
+footer a {
+  color: #fff;
+}
+
+footer .shop-list {
+  font-weight: bold;
+  font-size: 1.6rem;
+}
+
+footer .shop-name {
+  margin: 5px 0;
+}
+
+footer .shop-name a::before {
+  content: "-";
+  color: #fff;
+  margin-right: 5px;
+}
+
+footer .copyright {
+  color: #fff;
+  margin-top: 30px;
 }
