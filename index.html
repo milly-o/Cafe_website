@@ -54,7 +54,7 @@
                     </nav>
                 </div>
             </div>
-            <a href="#" class="mobile-menu-block mobile-menu-block-access">
+            <a href="#access-anchor" class="mobile-menu-block mobile-menu-block-access scroll">
                 <img src="images/icon_access.svg" alt="">
                 <span>アクセス</span>
             </a>
@@ -96,12 +96,12 @@
                 <li><img src="images/slider_02_pc.jpg" alt=""></li>
                 <li><img src="images/slider_03_pc.jpg" alt=""></li>
                 <li><img src="images/slider_04_pc.jpg" alt=""></li>
-            </ul>            
+            </ul>
         </div>
         <p class="hero-image-logo">
             <img src="images/logo_hero_nishi-shinjuku.svg" alt="">
         </p>
-     </div>
+    </div>
     </div>
     <div id="hero-under-container-fluid" class="container-fluid">
         <div class="row">
@@ -290,9 +290,9 @@
             <div class="container-fluid pan-container-fluid">
                 <h2><img src="images/title_lineup.png" alt="ラインナップ"></h2>
                 <section class="section-cro">
-                    <div class="container cro-read-container">
-                        <div class="row">
-                            <h3>店舗限定！こだわりのクロワッサン</h3>
+                    <div class="container read-container">
+                        <div class="row d-block">
+                            <h3>店舗限定！<br class="d-md-none">こだわりのクロワッサン</h3>
                             <p>外はサクサク、中はふわふわ。素材からこだわったクロワッサンは一度食べたらやみつきの当店の名物メニュー。<br class="d-none d-lg-block">あなたのベストクロワッサンを探してみてください。</p>
                         </div>
                     </div>
@@ -374,10 +374,31 @@
                     </div>
                 </section>
                 <section class="section-pan">
-                    <div class="container cro-read-container">
-                        <div class="row">
-                            <h3>あたため出来ます！焼きたてパン</h3>
+                    <div class="container read-container">
+                        <div class="row d-block">
+                            <h3>あたため出来ます！<br class="d-md-none">焼きたてパン</h3>
                             <p>お食事にぴったりのボリューミーなパンから、おやつにぴったりの甘くて美味しいパンまで豊富な品揃え。</p>
+                        </div>
+                    </div>
+                        <div class="bread-gallery-aera">
+                            <ul class="bread-gallery">
+                                <li><img src="images/bread_01.jpg" alt=""></li>
+                                <li><img src="images/bread_02.jpg" alt=""></li>
+                                <li><img src="images/bread_03.jpg" alt=""></li>
+                                <li><img src="images/bread_04.jpg" alt=""></li>
+                                <li><img src="images/bread_05.jpg" alt=""></li>
+                                <li><img src="images/bread_06.jpg" alt=""></li>
+                                <li><img src="images/bread_07.jpg" alt=""></li>
+                                <li><img src="images/bread_08.jpg" alt=""></li>
+                                <li><img src="images/bread_09.jpg" alt=""></li>
+                                <li><img src="images/bread_10.jpg" alt=""></li>
+                                <li><img src="images/bread_11.jpg" alt=""></li>
+                                <li><img src="images/bread_12.jpg" alt=""></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
                         </div>
                     </div>
                 </section>
@@ -1161,7 +1182,6 @@
             </div>
         </div>
     </div>
-
     <a id="access-anchor" class="anchor"></a>
     <div id="access-container-fluid" class="container-fluid">
         <div class="access-top-area">
@@ -1172,7 +1192,7 @@
                 </div>
                 <div class="sub">
                     <p>西武新宿駅から徒歩１分</p>
-                    <p>新宿駅東口から徒歩５分</p>   
+                    <p>新宿駅東口から徒歩５分</p>
                 </div>
             </div>
         </div>
@@ -1184,7 +1204,7 @@
                     <h4>住所</h4>
                     <div>
                         <p>〒160−0021</p>
-                        <p>東京都新宿区歌舞伎町１丁目３０−１<br>西武新宿ぺぺ&Brick St.</p>   
+                        <p>東京都新宿区歌舞伎町１丁目３０−１<br>西武新宿ぺぺ&Brick St.</p>
                     </div>
                 </div>
                 <hr>
@@ -1227,32 +1247,29 @@
                 <div class="access-box">
                     <h4>決済</h4>
                     <div>
-                    <ul>
-                        <li>現金</li>
-                        <li>交通系IC決済</li>
-                        <li>楽天Edy</li>
-                        <li>iD</li>
-                        <li>クレジットカード（VISA、MASTER、JCB、Diners)</li>
-                    </ul>
+                        <ul>
+                            <li>現金</li>
+                            <li>交通系IC決済</li>
+                            <li>楽天Edy</li>
+                            <li>iD</li>
+                            <li>クレジットカード（VISA、MASTER、JCB、Diners)</li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
     </div>
     <!--/#access-container-fluid-->
-
-
-<script src="js/slick.min.js"></script>
-<script src="js/slick_origin.js"></script>
-
-<script type="text/javascript">
+    <script src="js/slick.min.js"></script>
+    <script src="js/slick_origin.js"></script>
+    <script type="text/javascript">
     $(".modal-sp-menu").modaal({
         overlay_opacity: "0.9"
     });
     $('.mobile-menu a').click(function() {
         $('.modal-sp-menu').modaal('close')
     })
-</script>    
+    </script>
 </body>
 
 </html>

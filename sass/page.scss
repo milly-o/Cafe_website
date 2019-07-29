@@ -407,10 +407,10 @@
 	padding-top: 45px;
 }
 .bread-pr-container-fluid{
-	background: url('../images/bread_main_bg_sp_02.jpg') no-repeat;
+	background: url('../images/bread_main_bg_sp.png') no-repeat;
 	background-size: cover;
 	padding-bottom: 50px;
-	@include lg {
+	@include pc {
 		background: url('../images/bread_main_bg_pc.jpg') no-repeat;
 		background-size: cover;
 	}
@@ -487,7 +487,10 @@
 .pan-container-fluid{
 	h2{
 		width: 160px;
-		margin: 50px auto 30px;
+		margin: 0 auto 30px;
+		@include sp {
+			margin-top: 30px;
+		}
 		@include pc {
 			width: 200px;
 			margin: 80px auto 60px;
@@ -500,6 +503,21 @@
 		font-weight: bold;
 		@include pc {
 			font-size: 25px;
+		}
+	}
+	section .read-container{
+		h3{
+			margin: 0 auto 10px;
+			text-align: center;
+			@include pc {
+				font-size: 3.0rem;
+			}
+		}
+		p{
+			text-align: left;
+			@include pc {
+				text-align: center;
+			}
 		}
 	}
 }
@@ -606,6 +624,35 @@
 	margin-top: 80px;
 	@include pc {
 		margin-top: 150px;
+	}
+}
+
+.bread-gallery-aera{
+	margin-top: 20px;
+	margin-bottom: 50px;
+	@include pc {
+		margin-top: 50px;
+	}
+	@include lg {
+		width: 90%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+.bread-gallery{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	li{
+		width: 32%;
+		margin-bottom: 5px;
+		@include pc {
+			width: 24%;
+		}
+		@include lg {
+			width: 19%;
+			margin-bottom: 20px;
+		}
 	}
 }
 
@@ -1107,6 +1154,7 @@
 
 // acess
 #access-container-fluid{
+    background-color: #f7f6f2;
 	.logo{
 		margin: 0 auto;
 		width: 40%;

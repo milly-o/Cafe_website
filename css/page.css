@@ -543,12 +543,12 @@
 }
 
 .bread-pr-container-fluid {
-  background: url("../images/bread_main_bg_sp_02.jpg") no-repeat;
+  background: url("../images/bread_main_bg_sp.png") no-repeat;
   background-size: cover;
   padding-bottom: 50px;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .bread-pr-container-fluid {
     background: url("../images/bread_main_bg_pc.jpg") no-repeat;
     background-size: cover;
@@ -651,7 +651,13 @@
 
 .pan-container-fluid h2 {
   width: 160px;
-  margin: 50px auto 30px;
+  margin: 0 auto 30px;
+}
+
+@media (min-width: 576px) {
+  .pan-container-fluid h2 {
+    margin-top: 30px;
+  }
 }
 
 @media (min-width: 768px) {
@@ -671,6 +677,27 @@
 @media (min-width: 768px) {
   .pan-container-fluid section h3 {
     font-size: 25px;
+  }
+}
+
+.pan-container-fluid section .read-container h3 {
+  margin: 0 auto 10px;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .pan-container-fluid section .read-container h3 {
+    font-size: 3.0rem;
+  }
+}
+
+.pan-container-fluid section .read-container p {
+  text-align: left;
+}
+
+@media (min-width: 768px) {
+  .pan-container-fluid section .read-container p {
+    text-align: center;
   }
 }
 
@@ -821,6 +848,49 @@
 @media (min-width: 768px) {
   .section-pan {
     margin-top: 150px;
+  }
+}
+
+.bread-gallery-aera {
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+@media (min-width: 768px) {
+  .bread-gallery-aera {
+    margin-top: 50px;
+  }
+}
+
+@media (min-width: 992px) {
+  .bread-gallery-aera {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.bread-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.bread-gallery li {
+  width: 32%;
+  margin-bottom: 5px;
+}
+
+@media (min-width: 768px) {
+  .bread-gallery li {
+    width: 24%;
+  }
+}
+
+@media (min-width: 992px) {
+  .bread-gallery li {
+    width: 19%;
+    margin-bottom: 20px;
   }
 }
 
@@ -1486,6 +1556,10 @@
   .menu-container .set .item-list-no-image .fee::after {
     font-size: 1.3rem;
   }
+}
+
+#access-container-fluid {
+  background-color: #f7f6f2;
 }
 
 #access-container-fluid .logo {
