@@ -774,7 +774,7 @@
 		}
 	}
 	.menu-title{
-		border-top: double;
+		border-top: solid 1px;
 		border-bottom: solid 1px;
 		padding: 6px 0;
 		text-align: center;
@@ -783,6 +783,16 @@
 		font-size: 2.4rem;
 		letter-spacing: 1px;
 		color: $gold;
+		position: relative;
+		&:before{
+			border-top:1px solid;
+			width: 100%;
+			content: "";
+			height: 1px;
+			position: absolute;
+			left: 0;
+			top: -5px;
+		}
 		@include font-mincho;
 		@include pc {
 			padding: 15px 0;
@@ -1065,11 +1075,12 @@
 		display: flex;
 		flex-flow: row wrap;
 		width: 100%;
-		margin-bottom: 18px;
+		margin-bottom: 10px;
 		font-size: 1.4rem;
 		@include lg {
 			width: 48%;
 			font-size: 1.8rem;
+			margin-bottom: 15px;
 		}
 	}
 	.item-line{
@@ -1100,8 +1111,15 @@
 		margin: 0 auto;
 		width: 40%;
 		margin-bottom: 30px;
+		@include pc {
+			width: 30%;
+		}
+		@include lg {
+			width: 20%;
+			max-width: 300px;
+		}
 		p{
-			font-size: 2.5rem;
+			font-size: 2.2rem;
 			color: #fff;
 			text-align: center;
 			font-weight: bold;
@@ -1115,6 +1133,9 @@
 			color: #fff;
 			text-align: center;
 			font-weight: bold;
+			@include pc {
+				font-size: 2.4rem;
+			}
 		}
 	}
 }
@@ -1123,21 +1144,33 @@
 	background: url("../images/footer_bg_sp.png");
 	background-repeat: no-repeat;
 	background-size: cover;
-	margin-right: -15px;
-	margin-left: -15px;
-	height: 450px;
+	margin: 0 -15px -120px;
 	padding: 40px 0;
+	@include pc {
+		background: url("../images/footer_bg_pc.png");
+		background-repeat: no-repeat;
+		background-size: cover;
+		padding: 80px 0;
+	}
 	.access-top-text{
+		padding: 40px 0 100px;
+		.logo{
+		}
 	}
 }
 
 .access-container{
 	background-color: #fff;
 	padding: 30px 15px;
-	margin: -120px auto 0;
+	@include lg {
+		padding: 30px 50px;
+	}
 	h2{
-		margin-bottom: 10px;
+		margin: 10px 0;
 		text-align: center;
+		@include pc {
+			margin: 20px 0;
+		}
 		img{
 			height: 40px;
 			width: auto;
@@ -1145,21 +1178,33 @@
 	}
 	iframe{
 		width: 100%;
-		border: 1px #333 solid;
+		border: 1px #b7b7b7 solid;
 		margin: 20px auto;
+		height: 220px;
+		@include pc {
+			height: 350px;
+		}
 	}
 	.access-box{
 		display: flex;
+	    align-items: baseline;
 		h4{
-			margin-right: 1.4rem;
+			font-size: 1.4rem;
 			font-weight: bold;
 			width: 10%;
 			min-width: 40px;
+			@include pc {
+				font-size: 1.8rem;
+			}
 		}
 	}
 	.access-box-facility ul li{
 		color: $orange;
 		font-weight: bold;
+		margin-bottom: 8px;
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
 		img{
 			width: 20px;
 			height: auto;
